@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            F4
+        </title>
+        <style>
+            #out{
+                width: 500px;
+                background-color: white;
+                padding:2%;
+            }
+            body{
+                font-family:sans-serif
+            }
+           
+            table{
+                width: 100%;
+              }
+              
+              td{
+                height:30px;
+               padding-right: 3%;
+              }
+              .full-width{
+                box-sizing: border-box;
+                height:30px;
+                width: 100%;
+              }
+            input{
+               
+                border:1px solid skyblue;
+                height:20px;
+                border-radius: 5px;
+                padding: 3px;
+                
+            }
+            #name{
+                color: rgb(25, 174, 233);
+                font-weight: bold;
+            }
+            textarea{
+                border-color:rgb(25, 174, 233) ;
+                height: 50px;
+            }
+            label{
+                color: rgb(90, 87, 87);
+            }
+            label,p{
+                font-size: small;
+            }
+            p{
+                color: black;
+                font-weight: bold;
+            }
+            .imp{
+                color: red;
+            }
+            .fullwid{
+                margin-top: 5px;
+                width: 95%;
+            }
+            .small{
+                font-size: 10px;
+                color: rgb(162, 155, 155);
+            }
+            #btn1{
+                padding: 10px;
+                background-color: rgba(235, 112, 4, 0.992);
+                color: white;
+                font-weight: bold;
+                border: none;
+            }
+            #btn2{
+                border-radius: 3px;
+                 background-color:rgb(9, 120, 238) ;
+                 color:white;
+                 border:none;
+                padding:10px;
+                height:45px;
+                 width: 200px;
+            }
+            
+            #back{
+                font-size: medium;
+                border:none;
+            }
+            #hh{
+                font-size: 28px;
+                font-weight: bold;
+            }
+            .left-div {
+                position: absolute;
+                top: 0;
+                left: 0;
+              }
+              
+              .right-div {
+                position: absolute;
+                top: 10px;
+                right: 5px;
+              }
+              header{
+                height: auto;
+              }
+              #outt{
+                height:50px;
+              }
+              #outout{
+                width: 100%;
+                background-color: rgb(225, 221, 221);
+                padding-top: 2%;
+                padding-left: 40%;
+                padding-bottom: 1%;
+              }
+              * {
+                box-sizing: border-box;
+                overflow-x: hidden;
+                
+              }
+              footer {
+               
+                  
+                background-color: #373435;
+                width: 100%;
+                
+                color: #fff;
+                padding-bottom: 10px;
+  
+              }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="outt">
+                <div class="left-div">
+                <table>
+                    <tr>
+                <td><img src="./images/image1.png"></td>
+                <td><span id="hh">Gradious</span></td>
+                    </tr>
+                </table>
+            </div>
+                <div class="right-div">
+                    <select id="back">
+                        <option>Course Details</option>
+                    </select>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>Fees</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>FAQs</span>&nbsp;
+                    <button id="btn1">Enroll Now</button>
+                </div>
+            </div>
+            
+        </header><hr size="1px" color="lightgrey" noshade="0">
+        <center><h2>Student Enrolment</h2></center>
+        <div id="outout">
+        <div id="out">
+        <p><span >Please fill in all the details, so that we can process your application.</span></p>
+        <p><span >Our admission team will take 48 hours to process your details</span></p>
+        <form>
+        <div id="in">
+            <h2>Personal Details</h2>
+            <label id="name" >Name</label><span class="imp">*</span>
+            
+            <table>
+                <tr>
+                    <td><input class="full-width" type="text" class="half" placeholder="First"></td>
+                    <td><input type="text" class="full-width"  class="half" placeholder="Last"></td>
+                </tr>
+                <tr>
+                <td><b><label>Email</label></b><span class="imp">*</span></td>
+                <td><label>Phone</label><span class="imp">*</span></td>
+                </tr>
+                <tr>
+                    <td><input type="email"class="full-width" ></td>
+                    <td><input type="number" class="full-width" placeholder="### ### ####"></td>
+                </tr>
+                <tr>
+                    <td><label>Address</label><span class="imp">*</span></td>
+                    
+                </tr>
+                <ul>
+                <li class="form-line" data-type="control_dropdown" id="id_18"><label class="form-label form-label-top form-label-auto" id="label_18" for="input_18"> Current City </label>
+                    <div id="cid_18" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_18" name="q18_currentCity" style="width:310px" data-component="dropdown" aria-label="Current City">
+                        <option value="">Please Select</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Warangal">Warangal</option>
+                        <option value="Adilabad">Adilabad</option>
+                        <option value="Karimnagar">Karimnagar</option>
+                      </select> </div>
+                  </li>
+                </ul>
+            </table>
+            <input type="text" class="fullwid" placeholder="Street Address"><br><br>
+            <table>
+                <tr>
+                    <td><input type="text" class="full-width" placeholder="City"></td>
+                    <td><input type="text" class="full-width" placeholder="State"></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h2>Education & Experience</h2>
+            <label>Highest Degree/Qualification</label><br>
+            
+            <span class="small"> is the highest level of education you have completed?</span><br>
+            <input type="text" class="fullwid"><br><br>
+            <label>Current/Last College you studied</label><span class="imp">*</span><br>
+            <span class="small">Please mention both college name and university</span><br>
+            <input type="text" class="fullwid"><br><br>
+            <label>Year you passed out</label><span class="imp">*</span><br>
+            <span class="small">If you are currently pursuing,mention the month and year you will be passing out</span><br>
+            <input type="text" class="fullwid"><br><br>
+            <b><label>How did you find out about us?</label></b><span class="imp">*</span><br>
+            <span class="small">If you stumbled upon us online, on what website or platform was it?</span><br>
+            <textarea class="fullwid"></textarea>
+        </div>
+        <br>
+        <center><button id="btn2"> Submit my application</button></center>
+        </form>
+        </div>
+        </div>
+        <footer>
+            <br><br>
+            <hr noshade="0px" color="grey">
+            <small style="margin-left:30%">Copyright Gradious Technologies (P)txt-2021</small>
+        </footer>
+    </body>
+    
+</html>

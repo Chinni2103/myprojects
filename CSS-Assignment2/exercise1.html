@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Media</title>
+        <style>
+            img{
+                width:20%;
+               margin:5%;
+                height:20%;
+                border:5px solid black;
+            }
+            #ml{
+                margin-left:7%;
+            }
+            body{
+                background-color: #89EABF;
+            }
+            @media only screen and (max-width: 1228px) {
+                body {
+                  background-color: #89D4EA;
+                }
+                img{
+                    width:30%;
+                    height:30%;
+                    margin-left: 10%;
+                }
+              }
+              @media only screen and (max-width: 800px) {
+                body {
+                  background-color:#F3EEEE;
+                }
+                img{
+                    width:80%;
+                    height: 80%;
+                    
+                }
+                div{
+                    background-color: black;
+                }
+                body{
+                    overflow-x: hidden;
+                }
+                
+              }
+        </style>
+    </head>
+    <body>
+        <h1>Media Query Demo</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse risus dui, pulvinar ut mi quis, dignissim pharetra mi. Pellentesque laoreet urna a velit iaculis, non lacinia eros tempus. Morbi condimentum arcu ut tristique aliquet. Duis magna massa, sollicitudin eget blandit vel, tempus non quam. Cras non ex eu erat tincidunt convallis eu ac arcu. Aenean eu mi scelerisque erat tempor maximus quis rhoncus nisl. Nullam sit amet mattis augue, maximus tristique dolor. Etiam lobortis nisl mi, vel lacinia enim lacinia a. Duis nec arcu rhoncus mi tempor auctor.
+
+            Quisque ultrices rutrum lacus, eget sollicitudin dolor placerat eu. Duis sagittis velit urna, ac placerat risus efficitur et. Phasellus ligula nunc, maximus quis porta a, ornare ut justo. Curabitur a tincidunt enim. Duis rutrum enim velit, eget suscipit leo tristique ac. Donec sed blandit metus, eu commodo enim. Cras pulvinar aliquet erat finibus iaculis. Nulla facilisi. Pellentesque vel cursus elit.
+            
+            Sed ac massa imperdiet, varius quam rutrum, sodales mauris. Praesent quis orci sem. Nam urna sapien, semper a auctor sed, fermentum interdum sapien. Pellentesque volutpat gravida quam sed efficitur. Praesent euismod semper lorem nec tempor. Phasellus in orci lectus. Fusce scelerisque mollis massa, vel efficitur enim cursus a. Maecenas nec aliquam ligula. Proin nec est vel lorem bibendum pellentesque. Morbi pulvinar augue urna, vel pharetra dolor laoreet eu.</p>
+        <h3>Columns</h3>
+        <div>
+            <img id="ml" src="./images/image1.jpg">
+            <img src="./images/image2.jpg">
+            <img src="./images/image3.jpg">
+            <img src="./images/image4.jpg">
+            <img src="./images/image5.jpg">
+        </div>
+        
+        
+    </body>
+</html>

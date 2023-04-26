@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Form
+        </title>
+        <style>
+            body{
+                background-color: rgb(182, 221, 161);
+            }
+            legend{
+                font-size: 25px;
+            }
+            fieldset{
+                font-family: cursive;
+                width: 45%;
+                background-color: rgb(74, 241, 74);
+                border-style: double; /* sets the border style to double */
+                border-width: 4px; 
+                border-color: black;
+                box-shadow: 0;
+            }
+             td {
+                padding: 8px;
+              }
+            textarea{
+                height: 50px;
+            }
+            button
+            {
+                margin-left: 0%;
+            }
+            #bot
+            {
+                padding-left: 30%;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+       <div>
+        <fieldset>
+            <legend align="center">USER FORM</legend><br>
+            <form>
+                <ul>
+                    <table>
+                        <tr><td>
+                    <li>FIRST NAME</li></td>
+                    <td> <input align="center" type="text"></td></tr>
+
+                    <tr>
+                    <td><li>PASSWORD </li></td>
+                        <td><input type="password"></td>
+                    </tr>
+                    <tr>
+                    <td><li>GENDER  </li></td>
+                    <td><input type="radio" name="gen">Male <input type="radio" name="gen">Female</td>
+                    </tr>
+                    <tr>
+                    <td id="top"><li>ADDRESS </li></td>
+                    <td><textarea></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><li>D.O.B </li></td>
+                        <td>
+                        <select>
+                            <option>Jan </option>
+                        </select>
+                        <select>
+                            <option>1 &nbsp;</option>
+                        </select>
+                        <select>
+                            <option value="">1990</option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><li>SELECT GAMES</li></td>
+                        <td>
+                        <input type="checkbox">Hockey
+                        <input type="checkbox">Football
+                        <input type="checkbox">Cricket
+                        <input type="checkbox">Volleyball</td>
+                    </tr>
+                    <tr>
+                    <td><li>MARITAL STATUS</li></td>
+                    <td>
+                        <input type="radio" name="mar">Married
+                        <input type="radio" name="mar">Unmarried
+                    </td>
+                    </tr>
+                    </table>
+                </ul>
+                
+                <div id="bot">
+                    <button>Submit</button>
+                    <button>Reset</button><br><br>
+                    <input type="checkbox">I accept this agreement
+                </div>
+            </form>
+        </fieldset>
+       </div>
+    </body>
+</html>

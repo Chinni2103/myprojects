@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Q5</title>
+        <script src="https://kit.fontawesome.com/4180bcae04.js" crossorigin="anonymous"></script>
+        <style>
+            body{
+                background-color: lightgray;
+                font-family:sans-serif;
+            }
+            #out{
+                height:50%;
+                padding:20px;
+                background-color: white;
+                margin-left: 30%;
+                margin-top: 10%;
+                margin-right:30%;
+            }
+            small{
+                color: grey;
+            }
+            .icon{
+                margin-top:10px;
+                padding: 6px 10px 9px;
+                border-bottom-left-radius: 4px;
+                border-top-left-radius:4px ;
+                background-color: aliceblue;
+                border:1px solid rgb(127, 125, 125)
+            }
+            i{
+                color: rgb(61, 60, 60);
+            }
+            input{
+                 height:24px;
+                 padding-top:4px;
+                 padding-bottom:4px;
+                 border:1px solid rgb(127, 125, 125);
+                 border-top-right-radius:4px ;
+                 border-bottom-right-radius: 4px;
+            }
+            #in{
+                padding-top:20px;
+                margin-left:60%;
+            }
+            #sign{
+                background-color: rgb(18, 160, 248);
+                color:white;
+                border-radius: 5px;
+                padding: 10px;
+                border:none;
+            }
+            #can{
+                background-color: grey;
+                color:white;
+                border-radius: 5px;
+                padding: 10px;
+                border:none;
+            }
+            .input{
+                margin-top:10px;
+            }
+            .ii1{
+                border-left:none;
+                width:90%;
+            }
+            #wid{
+                width: 15px;
+            }
+            #inin{
+                float:inline;
+            }
+            #cross{
+                float:right;
+            }
+           
+            tr{
+                width:50%;
+            }
+            #cross:hover{
+                cursor: pointer;
+                color: red;
+            }
+            #cross{
+                color:grey;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="out">
+            <table>
+                <tr>
+                <td><h2><i class="fa-solid fa-lock"></i> LOGIN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2></td>
+               <td align="right"><h2 id="cross">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X</h2></td>
+               </tr>
+            </table>
+            
+            <hr size="1px" color="lightgrey" noshade="0" width="100%">
+            <form>
+                <label>Email Address</label><br>
+                <div class="input"><span class="icon"><i class="fa-solid fa-envelope"></i></span><input class="ii1" placeholder="Enter Email" style="padding-left:10px" type="text"></div>
+                <small>We'll never share your password with anyone else</small><br><br>
+                <label>Password</label><br>
+                <div class="input"><span class="icon"><i class="fa-solid fa-lock-open"></i></span><input class="ii1" placeholder="Password" style="padding-left:10px" type="password"></div><br>
+                <table>
+                    <tr>
+                <td><input id="wid" type="checkbox"></td>
+                <td><span id="size"> Remember me</span></td>
+                </tr>
+                </table><br>
+                <hr size="1px" color="lightgrey" noshade="0" width="100%">
+                <div id="in">
+                    <span id="can">CANCEL</span>
+                    <span id="sign">SIGN-IN</span>
+                </div>
+            </form>
+            <script>
+                document.getElementById("cross").addEventListener("click", function() {
+                    document.body.innerHTML = "";
+                  });
+            </script>
+          
+        </div>
+    </body>
+</html>

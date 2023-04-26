@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Form2
+        </title>
+        <style>
+            td{
+                padding: 13px;
+            }
+            #out
+            {
+                width: 30%;
+            }
+            #inner1div{
+                padding:2%;
+                background-color: rgb(224, 147, 4);
+                color:yellow
+            }
+            #inner2div{
+                color: yellow;
+                background-color: rgb(4, 27, 41);
+            }
+            #inner3div{
+                background-color: rgb(224, 147, 4);
+                padding: 2%;
+                height: 38px;
+            }
+            #can
+            {
+                margin-right: 0%;
+            }
+           .col1{
+            text-align: right;
+           }
+           #can
+           {
+            padding: 3px;
+            background-color: rgb(248, 41, 41);
+            color: white;
+            width: 80px;
+            border: none;
+            height:35px;
+           
+            
+           }
+           #sub
+           {
+            
+            width: 80px;
+            height:35px;
+            padding: 3px;
+            background-color: rgb(21, 130, 21);
+            color: white;
+            border: none;
+           }
+           #inin{
+            width: fit-content;
+            float: right;
+           }
+        </style>
+    </head>
+    <body>
+
+        <div id="out">
+            <form>
+            <div id="inner1div">Sign up</div>
+            <div id="inner2div">
+                <table>
+                    <tr>
+                        <td class="col1">First Name</td>
+                        <td><input type="text" placeholder="Enter First Name"></td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Last Name</td>
+                        <td><input type="text" placeholder="Enter Last Name"></td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Date of Birth</td>
+                        <td><select>
+                            <option value="">Date</option>
+                            <option value="">1</option>
+                            </select>
+                            <select id="month">
+                            <option>Month &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option>Jan</option>
+                            </select>
+                            <select >
+                            <option >Year</option>
+                            <option value="2016">2016</option>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Gender </td>
+                    <td><input type="radio" name="gen">Male <input type="radio" name="gen">Female</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Country</td>
+                        <td><select>
+                            <option>Country</option>
+                            <option>India</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td class="col1">E-mail</td>
+                        <td><input type="email" placeholder="Enter E-mail"></td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Phone</td>
+                        <td><input type="number" placeholder="Enter Phone" ></td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Password</td>
+                        <td><input type="password"></td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Confirm Password</td>
+                        <td><input type="password"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="checkbox">I Accept to the Terms of use</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="inner3div">
+                <div id="inin">
+                <button id="sub">Submit</button>
+                <button id="can">Cancel</button>
+                </div>
+            </div>
+            </form>
+            
+            
+        </div>
+         
+    </body>
+</html>

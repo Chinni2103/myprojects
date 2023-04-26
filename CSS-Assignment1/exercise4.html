@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Q4</title>
+        <script src="https://kit.fontawesome.com/4180bcae04.js" crossorigin="anonymous"></script>
+        <style>
+            div{
+                border:2px solid black;
+                border-radius: 10px;
+                margin-left: 10%;
+                padding: 20px;
+                margin-top:5%;
+                width:60%;
+                height: 300px;
+                overflow:auto;
+                visibility: hidden;
+            }
+            
+            #ok{
+                background-color: green;
+                opacity: 0.8;
+                margin-top:20px;
+                padding: 15px 30px;
+                border:none;
+                margin-left: 70%;
+                
+            }
+            #close{
+                
+                background-color: red;
+                margin-top:20px ;
+                opacity:0.8;
+                padding: 15px 30px;
+                border:none;
+            }
+            #cross{
+                float: right;
+            }
+            i:hover{
+                color:red;
+            }
+            #close:hover{
+                background-color: red;
+            }
+            #ok:hover{
+                background-color: green;
+            }
+           .visible{
+            visibility:visible;
+           }
+           .notvisible{
+            visibility: hidden;
+           }
+           #ee{
+            border:none;
+            background-color: #071b3b;
+            color: white;
+            padding: 20px;
+           }
+        </style>
+    </head>
+    <body>
+        <center><button id="ee" onclick="show()">CLICK ME</button> </center>
+        <div id="tag">
+            <h1 id="cross"><i class="fa-sharp fa-solid fa-xmark"></i></h1><br>
+            <h1>CSSSCRIPT</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan erat ac libero vehicula consequat. Suspendisse libero massa, euismod id aliquet sit amet, rutrum at lectus. Maecenas sit amet libero lorem. Sed tristique leo nec nibh maximus, sit amet ultricies ligula elementum. Praesent bibendum eleifend dui, ac commodo leo commodo in. Suspendisse felis neque, lobortis sit amet ante ut, blandit venenatis magna. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+            <br><br><button id="ok">Okay</button>
+            <button id="close">Close</button>
+        </div>
+    </body>
+    <script>
+        function show(){
+            var d=document.getElementById("ee");
+            d.classList.add("notvisible")
+            var a=document.getElementById("tag");
+            a.classList.add("visible");
+        }
+        document.getElementById("cross").addEventListener("click", function() {
+            document.body.innerHTML = "";
+          });
+          document.getElementById("close").addEventListener("click", function() {
+            document.body.innerHTML = "Closed successfully";
+          });
+          document.getElementById("ok").addEventListener("click", function() {
+            document.body.innerHTML = "Button ok is pressed";
+          });
+    </script>
+</html>

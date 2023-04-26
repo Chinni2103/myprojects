@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form1</title>
+        <style>
+            table{
+                position:relative;
+                width: 100%;
+                border-spacing: 3px;
+            }
+            
+            #outerdiv{
+                height:fit-content;
+                width: 30%;
+                margin-left: 5px;
+                margin-right:5px;
+                margin-bottom:5px;
+                padding-bottom:0.5px;
+                border: 1px solid black;
+            }
+            .wid
+            {
+                width: 30%;
+            }
+            .wwid
+            {
+                width:70%;
+            }
+            #inner1div
+            {
+                margin-left:2px;
+                margin-top:2px;
+                margin-right: 3px;
+                padding:0.8%;
+                border: 1px solid black;
+                color:rgb(10, 150, 237); 
+                font-size:29px;
+                font-family:sans-serif;
+            }
+            .innerdiv
+            {
+                margin-left:2px;
+                margin-bottom:2px;
+                margin-right: 3px;
+                padding:0.8%;
+                border: 1px solid black;
+            }
+
+            tr{
+                width: max-content;
+            }
+            td{
+               
+                border:1px solid black;
+                padding-left: 10px;
+            }
+            .a{
+                height:40px;
+                width:90px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="outerdiv" >
+           <center><div id="inner1div" ><b>Form</b></div> </center>
+            <table>
+                
+                <tr>
+                    <td class="wid " >Enter Name</td>
+                    <td class="wwid wwid1"> <input type="text"> </td>
+                </tr>
+                <tr>
+                    <td class="wid ">Enter Password</td>
+                    <td class="wwid wwid1"><input type="password"></td>
+                </tr>
+                <tr>
+                    <td class="wid">Enter Address</td>
+                    <td class="wwid wwid1"><textarea></textarea></td>
+                </tr>
+                <tr>
+                    <td class="wid">Select Game</td>
+                    <td class="wwid"><input type="checkbox">Hockey<br><input type="checkbox">Football<br><input type="checkbox">Badminton<br><input type="checkbox">Cricket<br><input type="checkbox">volleyball<br></td>
+                </tr>
+                <tr>
+                    <td class="wid">Gender</td>
+                    <td class="wwid"><input type="radio" name="gen" checked> Male<input name="gen" type="radio"> Female </td>
+                </tr>
+                <tr>
+                    <td class="wid">Select ur age</td>
+                    <td class="wwid"><select>
+                        
+                        <option>Select</option>
+                        <option>19</option>
+                        <option>18</option>
+                        <option>17</option>
+                        <option>16</option>
+                    </select> </td>
+
+                </tr>
+                
+            </table>
+            <div class="innerdiv">
+                <center>
+                <input type="file">
+                </center>
+            </div>
+            <div class="innerdiv">
+                <center>
+                <input class="a" type="button" value="Click Me">
+                <input class="a" type="button" value="Reset">
+                <input class="a" type="submit" value="Submit Form">
+                </center>
+             </div>
+        </div>
+    </body>
+</html>
